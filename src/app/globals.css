@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neutrals carry ~90% of the surface. Nothing is pure black or pure white. */
+  --color-bone: #f4f1eb;
+  --color-bone-deep: #e9e4da;
+  --color-bone-edge: #dcd6c9;
+  --color-ink: #16150f;
+  --color-ink-soft: #2b2922;
+  --color-graphite: #6b675c;
+  --color-stone: #a49e91;
+  --color-void: #0c0b09;
+  --color-void-soft: #17150f;
+
+  /* The single accent. Hover states and small marks only. */
+  --color-clay: #9c5f3c;
+
+  --font-display: var(--font-instrument-serif), Georgia, serif;
+  --font-sans: var(--font-inter-tight), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  /* Deliberately bimodal: a huge display range, a small text range, and
+     almost nothing in between. The gap is what reads as confident. */
+  --text-display: clamp(3.5rem, 11vw, 10rem);
+  --text-display--line-height: 0.92;
+  --text-display--letter-spacing: -0.03em;
+  --text-title: clamp(2.25rem, 5.5vw, 4.5rem);
+  --text-title--line-height: 1;
+  --text-title--letter-spacing: -0.025em;
+  --text-body: 1.0625rem;
+  --text-body--line-height: 1.65;
+  --text-caption: 0.8125rem;
+  --text-caption--line-height: 1.5;
+  --text-micro: 0.6875rem;
+  --text-micro--line-height: 1.4;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
+
+  --spacing-gutter: clamp(1.5rem, 7vw, 8rem);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-bone);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: 1.65;
+  }
+
+  ::selection {
+    background-color: var(--color-clay);
+    color: var(--color-bone);
+  }
+
+  /* Lenis drives scroll position itself; native smoothing fights it. */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  /* Small caps metadata labels, borrowed from drawing title blocks. */
+  .label {
+    font-family: var(--font-mono);
+    font-size: var(--text-micro);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-graphite);
+  }
+
+  .measure {
+    max-width: 62ch;
+  }
+
+  /* Wipes an underline in from the left on hover rather than fading it. */
+  .link-wipe {
+    position: relative;
+    display: inline-block;
+  }
+
+  .link-wipe::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: -0.15em;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s var(--ease-out-expo);
+  }
+
+  .link-wipe:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
