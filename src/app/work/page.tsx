@@ -16,8 +16,8 @@ export default function WorkPage() {
         <p className="label md:col-span-2">Index</p>
         <div className="md:col-span-8 md:col-start-4">
           <MaskLines as="h1" className="font-display text-title" lines={["Work"]} />
-          <p className="measure mt-8 text-body text-ink-soft">
-            {orderedProjects.length} projects across architecture, interiors and design-build.
+          <p className="measure mt-2 text-body text-ink-soft">
+            {orderedProjects.length} selected projects across architecture, interiors and design-build.
           </p>
         </div>
       </div>

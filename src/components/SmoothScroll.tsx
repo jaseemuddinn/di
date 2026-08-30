@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 
 /**
- * Inertial scrolling. The weight here is deliberate — scroll that carries
+ * Inertial scrolling. The weight here is deliberate - scroll that carries
  * momentum reads as considered, where 1:1 native scroll reads as utilitarian.
  */
 export function SmoothScroll() {

@@ -61,7 +61,7 @@ export default async function ProjectPage({
         src={project.hero.src}
         alt={project.hero.alt}
         lines={[project.title]}
-        meta={[project.typology, project.location, project.year].filter(Boolean).join(" — ")}
+        meta={[project.typology, project.location, project.year].filter(Boolean).join(" - ")}
       />
 
       <section className="px-gutter py-28 md:py-40">

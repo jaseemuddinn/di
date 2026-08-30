@@ -29,12 +29,12 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://dinnovations.vercel.app"),
   title: {
-    default: `${studio.name} — ${studio.tagline}`,
-    template: `%s — ${studio.name}`,
+    default: `${studio.name} - ${studio.tagline}`,
+    template: `%s - ${studio.name}`,
   },
   description: studio.statement,
   openGraph: {
-    title: `${studio.name} — ${studio.tagline}`,
+    title: `${studio.name} - ${studio.tagline}`,
     description: studio.statement,
     type: "website",
     url: "/",

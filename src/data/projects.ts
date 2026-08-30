@@ -1,6 +1,6 @@
 /**
  * Studio photography only. Years, areas and clients are omitted when they
- * have not been confirmed — the spec table drops empty rows rather than
+ * have not been confirmed - the spec table drops empty rows rather than
  * inventing figures.
  */
 
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     narrative: [
       "A sector plot in Noida gives you a rectangle, two party walls and a single street frontage. Everything the house can offer has to come from that one open face, so the whole design effort went into making the street edge habitable rather than merely presentable.",
       "Each floor is pushed out into a balcony deep enough to hold furniture and a full run of planting, and the slabs are stepped so that no terrace sits in the shadow of the one above it. The planters are cast into the slab edge rather than stood on top of it, which keeps the parapet line thin and lets the greenery break the horizontals as it matures. The creeper running the full height of the elevation was planted at ground level and trained upward through all four levels.",
-      "Inside, the plan is organised around a family hall that rises through two floors, with the upper landing looking back down into it. A timber stair crosses that void on a single steel stringer, its treads cantilevered clear of frameless glass balustrades, and a cluster of pendants hangs the full height of the opening so the room reads as one volume from either level. The formal drawing room is kept apart from all of this — panelled, quieter, lit from a garden edge of full-height glazing — so the house can hold a reception and an ordinary evening at the same time without the two meeting.",
+      "Inside, the plan is organised around a family hall that rises through two floors, with the upper landing looking back down into it. A timber stair crosses that void on a single steel stringer, its treads cantilevered clear of frameless glass balustrades, and a cluster of pendants hangs the full height of the opening so the room reads as one volume from either level. The formal drawing room is kept apart from all of this - panelled, quieter, lit from a garden edge of full-height glazing - so the house can hold a reception and an ordinary evening at the same time without the two meeting.",
       "Because the studio carried the architecture, the interiors and the construction under a single contract, details that usually fall between trades were resolved once. Planter waterproofing and drainage, the recessed cove lighting that washes the stair and hall walls, and the boundary wall with its integrated gate and signage were all detailed and built by the same team that drew them.",
     ],
     hero: {
@@ -135,7 +135,7 @@ export const projects: Project[] = [
       "A top-floor apartment organised around a single living hall and two quieter bedrooms.",
     narrative: [
       "A penthouse in a Sector 78 tower is a box with one long glazed wall and a ceiling that can take whatever you ask of it. The hall uses that ceiling as the main event: a large recessed light panel, cove lighting around the perimeter, and a single curved sofa holding the centre of the room against two darker armchairs.",
-      "The second sitting area is smaller and more ordinary — a green sofa, a tufted armchair, a black glass table — so the apartment can take a formal evening and a weekday one without using the same furniture twice.",
+      "The second sitting area is smaller and more ordinary - a green sofa, a tufted armchair, a black glass table - so the apartment can take a formal evening and a weekday one without using the same furniture twice.",
       "Both bedrooms turn away from that colour. One is built around a tall padded headwall and a hanging pendant; the other around a tufted platform bed, a plastered feature wall with vertical light slots, and a run of tinted-glass wardrobes. The work is interiors only, fitted into an existing shell.",
     ],
     hero: {
@@ -274,9 +274,9 @@ export const projects: Project[] = [
     summary:
       "A sales apartment staged as an open living, dining and kitchen, with one bedroom in a single colour.",
     narrative: [
-      "A show flat has to photograph well and walk well in the same afternoon. The plan is kept open — living, dining and kitchen in one volume — so a visitor can stand in the door and see the whole apartment without being led.",
+      "A show flat has to photograph well and walk well in the same afternoon. The plan is kept open - living, dining and kitchen in one volume - so a visitor can stand in the door and see the whole apartment without being led.",
       "Three versions of that volume were finished: a yellow living-dining opening onto a compact kitchen; a dining table set against a balcony planter; and a darker scheme held together by a laser-cut screen between dining and kitchenette. The dry kitchen is a black-and-white run with a single sink and a long white counter.",
-      "The bedroom is the only room allowed a strong colour. Orange curtains, a patterned bedcover and a padded headwall with inset mirrors — enough to remember after the tour, and nothing that would fight the rest of the flat.",
+      "The bedroom is the only room allowed a strong colour. Orange curtains, a patterned bedcover and a padded headwall with inset mirrors - enough to remember after the tour, and nothing that would fight the rest of the flat.",
     ],
     hero: {
       src: showFlatHall2,

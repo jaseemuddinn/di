@@ -1,4 +1,4 @@
-/** Placeholder studio content — replace with the firm's real details. */
+/** Placeholder studio content - replace with the firm's real details. */
 
 export const studio = {
   name: "D Innovations",
@@ -52,7 +52,7 @@ export const services = [
   },
 ];
 
-/** Dates are drafted, not verified — correct them against the studio's records. */
+/** Dates are drafted, not verified - correct them against the studio's records. */
 export const timeline = [
   { year: studio.founded, event: "Practice founded in Delhi" },
   { year: "2013", event: "First independent residential commission completed" },

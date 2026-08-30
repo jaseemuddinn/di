@@ -13,7 +13,7 @@ export default function HomePage() {
         src={heroImage}
         alt="Private residence at dusk, with planted balconies and warm interior light"
         lines={["Architecture", "for the long term"]}
-        meta="Private Residence — Recent work"
+        meta="Private Residence - Recent work"
       />
 
       <section className="px-gutter py-32 md:py-48">

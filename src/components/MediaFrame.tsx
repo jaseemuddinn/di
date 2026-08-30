@@ -50,7 +50,7 @@ export function MediaFrame({
       {/*
         The trigger stays on this outer frame, which is never clipped. Chrome
         subtracts an element's own clip-path from its intersection rect, so an
-        element that animates its clip-path cannot also be the thing observed —
+        element that animates its clip-path cannot also be the thing observed -
         it hides itself below the threshold and the reveal never fires.
       */}
       <motion.div
