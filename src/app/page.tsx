@@ -13,7 +13,7 @@ export default function HomePage() {
       <Hero
         src={heroImage}
         alt="Private residence at dusk, with planted balconies and warm interior light"
-        lines={["We design it.", "We build it."]}
+        lines={["Architecture", "for the long term"]}
         meta="Private Residence - Recent work"
       />
 

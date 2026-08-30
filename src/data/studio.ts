@@ -4,7 +4,7 @@ export const studio = {
   name: "D Innovations",
   tagline: "We design it. We build it.",
   statement:
-    "We are an architecture and interiors practice in Delhi and Noida, working on private houses, apartments and show flats. We take a small number of commissions each year, and we only construct what we design — one team from the first sketch through handover.",
+    "We are an architecture and interiors practice in Delhi and Noida, working on private houses, apartments and show flats. We take a small number of commissions each year, and we only construct what we design - one team from the first sketch through handover.",
   founded: "2010",
   email: "hello@dinnovations.com",
   phone: "+91 99114 05689",
@@ -47,7 +47,7 @@ export const services = [
   },
   {
     title: "Design-Build",
-    body: "Single-contract delivery where the studio designs and builds — we do not take construction-only work, and we do not issue drawings for others to build.",
+    body: "Single-contract delivery where the studio designs and builds - we do not take construction-only work, and we do not issue drawings for others to build.",
     scope: ["Single-point delivery", "Cost planning", "Programme management", "Trade procurement", "Handover & defects"],
   },
 ];
@@ -68,7 +68,7 @@ export const process = [
   {
     n: "01",
     title: "Enquiry",
-    body: "Send the site, the brief and a rough timeline. We design and build only — no construction-only work, and no drawings for others to build.",
+    body: "Send the site, the brief and a rough timeline. We design and build only - no construction-only work, and no drawings for others to build.",
   },
   {
     n: "02",
@@ -83,7 +83,7 @@ export const process = [
   {
     n: "04",
     title: "Build",
-    body: "The same team that drew the project builds it — one contract, one programme, one point of contact on site.",
+    body: "The same team that drew the project builds it - one contract, one programme, one point of contact on site.",
   },
   {
     n: "05",

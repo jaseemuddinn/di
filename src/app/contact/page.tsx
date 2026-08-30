@@ -5,7 +5,7 @@ import { studio } from "@/data/studio";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Enquiries for ${studio.name} — we design and build across Delhi and Noida.`,
+  description: `Enquiries for ${studio.name} - we design and build across Delhi and Noida.`,
 };
 
 export default function ContactPage() {
