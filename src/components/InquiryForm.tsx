@@ -70,7 +70,8 @@ export function InquiryForm() {
             <option>Architecture</option>
             <option>Interiors</option>
             <option>Design-Build</option>
-            <option>Press or other</option>
+            <option>Landscape</option>
+            <option>Other</option>
           </select>
         </div>
       </div>

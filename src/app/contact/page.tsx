@@ -5,7 +5,7 @@ import { studio } from "@/data/studio";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Enquiries for ${studio.name} - architecture, interiors and design-build.`,
+  description: `Enquiries for ${studio.name} — we design and build across Delhi and Noida.`,
 };
 
 export default function ContactPage() {
@@ -21,9 +21,9 @@ export default function ContactPage() {
           />
           <Rise delay={0.3}>
             <p className="measure mt-10 text-body text-ink-soft">
-              We take on a limited number of commissions each year. The more you can tell us
-              about the site, the programme and your timeline, the more useful our first reply
-              will be.
+              We take on a limited number of commissions each year, and we only construct what we
+              design. The more you can tell us about the site, the programme and your timeline,
+              the more useful our first reply will be.
             </p>
           </Rise>
         </div>

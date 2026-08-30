@@ -6,7 +6,7 @@ import { orderedProjects } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Selected houses, interiors and show flats by D Innovations.",
+    "Houses, apartments and show flats designed and built by D Innovations.",
 };
 
 export default function WorkPage() {
@@ -17,7 +17,7 @@ export default function WorkPage() {
         <div className="md:col-span-8 md:col-start-4">
           <MaskLines as="h1" className="font-display text-title" lines={["Work"]} />
           <p className="measure mt-2 text-body text-ink-soft">
-            {orderedProjects.length} selected projects across architecture, interiors and design-build.
+            {orderedProjects.length} projects, each designed and constructed by the studio.
           </p>
         </div>
       </div>

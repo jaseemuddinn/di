@@ -2,9 +2,9 @@
 
 export const studio = {
   name: "D Innovations",
-  tagline: "Architecture, interiors and design-build",
+  tagline: "We design it. We build it.",
   statement:
-    "We are an architecture and interiors practice working across private houses, apartments and show flats in Delhi and Noida. We take a small number of projects each year and see each one through construction ourselves.",
+    "We are an architecture and interiors practice in Delhi and Noida, working on private houses, apartments and show flats. We take a small number of commissions each year, and we only construct what we design — one team from the first sketch through handover.",
   founded: "2010",
   email: "hello@dinnovations.com",
   phone: "+91 99114 05689",
@@ -24,8 +24,8 @@ export const principles = [
   },
   {
     n: "03",
-    title: "Fewer, longer projects",
-    body: "We take on a limited number of commissions each year so that a principal stays on every project from first sketch to handover.",
+    title: "Only what we draw",
+    body: "We do not build other people's designs, and we do not hand our drawings to outside contractors. If we construct it, we designed it first.",
   },
 ];
 
@@ -47,7 +47,7 @@ export const services = [
   },
   {
     title: "Design-Build",
-    body: "Single-contract delivery where the studio carries both design and construction responsibility, with one programme and one budget.",
+    body: "Single-contract delivery where the studio designs and builds — we do not take construction-only work, and we do not issue drawings for others to build.",
     scope: ["Single-point delivery", "Cost planning", "Programme management", "Trade procurement", "Handover & defects"],
   },
 ];
@@ -60,18 +60,36 @@ export const timeline = [
   { year: "2019", event: "First project delivered under a single design-build contract" },
   { year: "2022", event: "Construction team formed, ending reliance on outside contractors" },
   { year: "2024", event: "Landscape added to the studio's scope" },
-  { year: "2025", event: "Residence House completed in Noida" },
+  { year: "2025", event: "Residential House completed in Noida" },
 ];
 
-/**
- * Article titles are drafted to fit the studio's work, but the publications are
- * placeholders. Replace `source` with real mastheads and add links, or drop
- * this list and remove the Press section from the home page.
- */
-export const press = [
-  { year: "2025", title: "A Noida house that grows its own shade", source: "Publication name" },
-  { year: "2024", title: "One contract, from first drawing to handover", source: "Publication name" },
-  { year: "2023", title: "Balconies deep enough to live on", source: "Publication name" },
+/** How a commission actually proceeds. Sequence, not marketing. */
+export const process = [
+  {
+    n: "01",
+    title: "Enquiry",
+    body: "Send the site, the brief and a rough timeline. We design and build only — no construction-only work, and no drawings for others to build.",
+  },
+  {
+    n: "02",
+    title: "Site and brief",
+    body: "A visit, a measured survey, and a first conversation about how the rooms should work. Nothing is drawn until the constraints are understood.",
+  },
+  {
+    n: "03",
+    title: "Design",
+    body: "Concept through drawings, samples and models, until the plan, the finishes and the budget sit together. Changes happen here, not on site.",
+  },
+  {
+    n: "04",
+    title: "Build",
+    body: "The same team that drew the project builds it — one contract, one programme, one point of contact on site.",
+  },
+  {
+    n: "05",
+    title: "Handover",
+    body: "Snagging, as-built drawings, and the first season of occupation. A principal remains the point of contact after the keys are handed over.",
+  },
 ];
 
 export const navigation = [

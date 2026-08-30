@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { MediaFrame } from "@/components/MediaFrame";
 import { MaskLines, Rise, Rule } from "@/components/Reveal";
 import { projects } from "@/data/projects";
+import { Process } from "@/components/Process";
 import { principles, services, studio, timeline } from "@/data/studio";
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function StudioPage() {
             <MaskLines
               as="h1"
               className="font-display text-title"
-              lines={["A practice built", "around building."]}
+              lines={["We only build", "what we design."]}
             />
             <Rise delay={0.3}>
               <p className="measure mt-10 text-body text-ink-soft">{studio.statement}</p>
@@ -82,7 +83,9 @@ export default function StudioPage() {
         </div>
       </section>
 
-      <section className="px-gutter py-32 md:py-48">
+      <Process />
+
+      <section className="px-gutter pb-32 md:pb-48">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <h2 className="label md:col-span-2">Timeline</h2>
           <ul className="md:col-span-8 md:col-start-4">

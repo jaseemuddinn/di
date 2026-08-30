@@ -71,8 +71,8 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "residence-house",
-    title: "Residence House",
+    slug: "residential-house",
+    title: "Residential Property in Noida",
     typology: "Private Residence",
     disciplines: ["Architecture", "Interiors", "Design-Build"],
     location: "Noida, Uttar Pradesh",

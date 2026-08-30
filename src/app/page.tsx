@@ -4,7 +4,8 @@ import { Hero } from "@/components/Hero";
 import { ProjectRow } from "@/components/ProjectRow";
 import { MaskLines, Rise, Rule } from "@/components/Reveal";
 import { featuredProjects } from "@/data/projects";
-import { press, services, studio } from "@/data/studio";
+import { Process } from "@/components/Process";
+import { services, studio } from "@/data/studio";
 
 export default function HomePage() {
   return (
@@ -12,7 +13,7 @@ export default function HomePage() {
       <Hero
         src={heroImage}
         alt="Private residence at dusk, with planted balconies and warm interior light"
-        lines={["Architecture", "for the long term"]}
+        lines={["We design it.", "We build it."]}
         meta="Private Residence - Recent work"
       />
 
@@ -23,7 +24,7 @@ export default function HomePage() {
             <MaskLines
               as="h2"
               className="font-display text-title"
-              lines={["We design a small number", "of buildings each year,", "and we build many of them."]}
+              lines={["We only construct", "what we design."]}
             />
             <Rise delay={0.3}>
               <p className="measure mt-10 text-body text-ink-soft">{studio.statement}</p>
@@ -68,23 +69,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="px-gutter py-32 md:py-48">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <h2 className="label md:col-span-2">Press</h2>
-          <ul className="md:col-span-8 md:col-start-4">
-            {press.map((item) => (
-              <li
-                key={item.title}
-                className="flex flex-col gap-1 border-t border-bone-edge py-6 last:border-b sm:flex-row sm:items-baseline sm:gap-8"
-              >
-                <span className="label w-16 shrink-0">{item.year}</span>
-                <span className="flex-1 text-body leading-snug">{item.title}</span>
-                <span className="label sm:text-right">{item.source}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      <Process href="/contact" />
     </>
   );
 }
