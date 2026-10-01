@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { MediaFrame } from "@/components/MediaFrame";
-import { MaskLines, Rise, Rule } from "@/components/Reveal";
-import { projects } from "@/data/projects";
+import { MaskLines, Rise } from "@/components/Reveal";
 import { Process } from "@/components/Process";
-import { principles, services, studio, timeline } from "@/data/studio";
+import { projects } from "@/data/projects";
+import { about, services, studio } from "@/data/studio";
 
 export const metadata: Metadata = {
   title: "Studio",
@@ -23,10 +23,14 @@ export default function StudioPage() {
             <MaskLines
               as="h1"
               className="font-display text-title"
-              lines={["We only build", "what we design."]}
+              lines={["About"]}
             />
             <Rise delay={0.3}>
-              <p className="measure mt-10 text-body text-ink-soft">{studio.statement}</p>
+              <div className="measure mt-10 space-y-6 text-body text-ink-soft">
+                {about.map((paragraph) => (
+                  <p key={paragraph.slice(0, 32)}>{paragraph}</p>
+                ))}
+              </div>
             </Rise>
           </div>
         </div>
@@ -40,22 +44,6 @@ export default function StudioPage() {
           sizes="100vw"
           priority
         />
-      </section>
-
-      <section className="px-gutter pb-32 md:pb-48">
-        <Rule />
-        <h2 className="label pt-6">How we work</h2>
-        <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-3">
-          {principles.map((principle, i) => (
-            <Rise key={principle.n} delay={i * 0.08}>
-              <p className="label text-clay">{principle.n}</p>
-              <h3 className="mt-4 font-display text-[clamp(1.6rem,2.4vw,2.25rem)] leading-tight">
-                {principle.title}
-              </h3>
-              <p className="mt-4 text-caption leading-[1.75] text-graphite">{principle.body}</p>
-            </Rise>
-          ))}
-        </div>
       </section>
 
       <section data-tone="dark" className="bg-void px-gutter py-32 text-bone md:py-48">
@@ -83,24 +71,7 @@ export default function StudioPage() {
         </div>
       </section>
 
-      <Process />
-
-      <section className="px-gutter pb-32 md:pb-48">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <h2 className="label md:col-span-2">Timeline</h2>
-          <ul className="md:col-span-8 md:col-start-4">
-            {timeline.map((entry) => (
-              <li
-                key={entry.year}
-                className="flex items-baseline gap-8 border-t border-bone-edge py-6 last:border-b"
-              >
-                <span className="label w-16 shrink-0">{entry.year}</span>
-                <span className="text-body leading-snug">{entry.event}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      <Process href="/contact" />
     </>
   );
 }

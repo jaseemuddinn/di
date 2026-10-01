@@ -3,9 +3,9 @@ import heroImage from "@/assets/hero.webp";
 import { Hero } from "@/components/Hero";
 import { ProjectRow } from "@/components/ProjectRow";
 import { MaskLines, Rise, Rule } from "@/components/Reveal";
-import { featuredProjects } from "@/data/projects";
 import { Process } from "@/components/Process";
-import { services, studio } from "@/data/studio";
+import { featuredProjects } from "@/data/projects";
+import { about, services } from "@/data/studio";
 
 export default function HomePage() {
   return (
@@ -13,8 +13,8 @@ export default function HomePage() {
       <Hero
         src={heroImage}
         alt="Private residence at dusk, with planted balconies and warm interior light"
-        lines={["Architecture", "for the long term"]}
-        meta="Private Residence - Recent work"
+        lines={["Designing Spaces.", "Shaping Lives."]}
+        meta="Architecture · Interiors · Landscape"
       />
 
       <section className="px-gutter py-32 md:py-48">
@@ -24,10 +24,10 @@ export default function HomePage() {
             <MaskLines
               as="h2"
               className="font-display text-title"
-              lines={["We only construct", "what we design."]}
+              lines={["Architecture,", "interiors and landscape."]}
             />
             <Rise delay={0.3}>
-              <p className="measure mt-10 text-body text-ink-soft">{studio.statement}</p>
+              <p className="measure mt-10 text-body text-ink-soft">{about[0]}</p>
               <Link href="/studio" className="label link-wipe mt-8 inline-block text-ink">
                 About the studio
               </Link>

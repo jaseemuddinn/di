@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { WorkList } from "@/components/WorkList";
 import { MaskLines } from "@/components/Reveal";
+import { WorkIndex } from "@/components/WorkIndex";
 import { orderedProjects } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Work",
-  description:
-    "Houses, apartments and show flats designed and built by D Innovations.",
+  description: "Residential, commercial and institutional projects by D Innovations.",
 };
 
 export default function WorkPage() {
@@ -17,14 +16,12 @@ export default function WorkPage() {
         <div className="md:col-span-8 md:col-start-4">
           <MaskLines as="h1" className="font-display text-title" lines={["Work"]} />
           <p className="measure mt-2 text-body text-ink-soft">
-            {orderedProjects.length} projects, each designed and constructed by the studio.
+            Selected projects across architecture, interiors and landscape.
           </p>
         </div>
       </div>
 
-      <div className="mt-20 md:mt-32">
-        <WorkList items={orderedProjects} />
-      </div>
+      <WorkIndex projects={orderedProjects} />
     </section>
   );
 }

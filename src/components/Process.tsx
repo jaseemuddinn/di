@@ -6,7 +6,7 @@ export function Process({ href }: { href?: string }) {
     <section className="px-gutter py-32 md:py-48">
       <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
         <div className="md:col-span-2">
-          <h2 className="label">A commission</h2>
+          <h2 className="label">Our process</h2>
           {href ? (
             <Link href={href} className="label link-wipe mt-4 inline-block text-ink">
               Start an enquiry

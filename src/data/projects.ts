@@ -29,6 +29,7 @@ import showFlatHall2 from "@/assets/show-flat/hall2.webp";
 import showFlatHall3 from "@/assets/show-flat/hall3.webp";
 import showFlatKitchen from "@/assets/show-flat/kitchen.webp";
 import showFlatRoom from "@/assets/show-flat/room.webp";
+import type { WorkCategory } from "@/data/studio";
 
 export type Discipline = "Architecture" | "Interiors" | "Landscape" | "Design-Build";
 
@@ -52,6 +53,7 @@ export interface Project {
   slug: string;
   title: string;
   typology: string;
+  category: WorkCategory;
   disciplines: Discipline[];
   location: string;
   year?: string;
@@ -74,6 +76,7 @@ export const projects: Project[] = [
     slug: "residential-house",
     title: "Residential Property in Noida",
     typology: "Private Residence",
+    category: "residential",
     disciplines: ["Architecture", "Interiors", "Design-Build"],
     location: "Noida, Uttar Pradesh",
     year: "2025",
@@ -126,6 +129,7 @@ export const projects: Project[] = [
     slug: "penthouse-sector-78",
     title: "Penthouse at Sector 78",
     typology: "Penthouse Interiors",
+    category: "residential",
     disciplines: ["Interiors"],
     location: "Noida, Uttar Pradesh",
     status: "Completed",
@@ -169,6 +173,7 @@ export const projects: Project[] = [
     slug: "198-yojna-vihar",
     title: "198, Yojna Vihar",
     typology: "Private Residence",
+    category: "residential",
     disciplines: ["Architecture", "Interiors", "Landscape"],
     location: "Yojna Vihar, Delhi",
     status: "Completed",
@@ -217,6 +222,7 @@ export const projects: Project[] = [
     slug: "residence-kaushambi",
     title: "Residence at Kaushambi",
     typology: "Private Residence",
+    category: "residential",
     disciplines: ["Architecture", "Interiors"],
     location: "Kaushambi, Uttar Pradesh",
     status: "Completed",
@@ -266,6 +272,7 @@ export const projects: Project[] = [
     slug: "show-flat",
     title: "Show Flat",
     typology: "Show Flat",
+    category: "residential",
     disciplines: ["Interiors"],
     location: "Delhi NCR",
     status: "Completed",
@@ -327,6 +334,9 @@ export const orderedProjects = [...projects].sort((a, b) => {
   if (b.year) return 1;
   return 0;
 });
+
+export const projectsByCategory = (category: WorkCategory) =>
+  orderedProjects.filter((p) => p.category === category);
 
 export const adjacentProject = (slug: string) => {
   const i = orderedProjects.findIndex((p) => p.slug === slug);

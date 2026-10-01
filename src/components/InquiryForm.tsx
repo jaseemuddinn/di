@@ -69,8 +69,9 @@ export function InquiryForm() {
           <select id="discipline" name="discipline" className={`${field} mt-3`} defaultValue="Architecture">
             <option>Architecture</option>
             <option>Interiors</option>
-            <option>Design-Build</option>
             <option>Landscape</option>
+            <option>Design-Build</option>
+            <option>Consultation</option>
             <option>Other</option>
           </select>
         </div>
